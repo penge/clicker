@@ -1,0 +1,27 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url("gray_jean.png");
+}
+
+#score, #over {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 6em;
+  padding: 10px 50px;  
+}
+
+#score {
+  float: left;
+  color: #ccc;
+}
+
+#over {
+  float: right;
+  color: #b8270e;
+  display: none;
+}
