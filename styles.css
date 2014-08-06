@@ -20,35 +20,33 @@ body {
   float: right;
 }
 
-.silver {
-  color: #ccc;
-}
-
-.red {
-  color: #b8270e;
-}
-
 .text {
   font-family: 'Fjalla One', sans-serif;
   font-size: 6em;
+  color: #4F5A6D;
   padding: 10px 50px;  
 }
 
-.link {
-  -webkit-transition: color 1s;
-  -moz-transition: color 1s;
-  transition: color 1s;
+.link:hover {
   cursor: pointer;
+  text-decoration: underline;
 }
 
-.link:hover {
-  color: #aaa;
+#highscore {
+  font-size: 1.5em; 
+}
+
+#over {
+  clear: both;
+  color: #dd6969;
+  font-size: 8em;
 }
 
 .circle {
   /* width and height will be set by javascript */
   position: absolute;
-  background: #62c7f1;
+  background: #dd6969;
+  opacity: .5;
   cursor: pointer;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
