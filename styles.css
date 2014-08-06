@@ -12,19 +12,45 @@ body {
   user-select: none;
 }
 
-#score, #over {
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.silver {
+  color: #ccc;
+}
+
+.red {
+  color: #b8270e;
+}
+
+.text {
   font-family: 'Fjalla One', sans-serif;
   font-size: 6em;
   padding: 10px 50px;  
 }
 
-#score {
-  float: left;
-  color: #ccc;
+.link {
+  -webkit-transition: color 1s;
+  -moz-transition: color 1s;
+  transition: color 1s;
+  cursor: pointer;
 }
 
-#over {
-  float: right;
-  color: #b8270e;
-  display: none;
+.link:hover {
+  color: #aaa;
+}
+
+.circle {
+  /* width and height will be set by javascript */
+  position: absolute;
+  background: #62c7f1;
+  cursor: pointer;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
 }
