@@ -6,11 +6,9 @@ html, body {
 }
 
 body {
-  background: url("gray_jean.png");
+  background: url("brushed.png");
   -webkit-user-select: none;
-  -khtml-user-select: none;
   -moz-user-select: none;
-  -o-user-select: none;
   user-select: none;
 }
 
