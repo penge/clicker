@@ -5,6 +5,9 @@ $(function() {
 });
 
 var UI = (function() {
+  var overSound = new Audio('over.mp3');
+  var hitSound = new Audio('hit.mp3');
+  
   function init() {
     reset();
     updateHighscore(0);
@@ -27,7 +30,13 @@ var UI = (function() {
     });
   }
 
+  function hit(circle) {
+    hitSound.play();
+    $(circle).stop().remove();
+  }
+
   function over() {
+    overSound.play();
     $('#over, #replay').show();
   }
 
@@ -41,6 +50,7 @@ var UI = (function() {
 
   return {
     init:            init,
+    hit:             hit,
     over:            over,
     updateScore:     updateScore,
     updateHighscore: updateHighscore,
@@ -81,7 +91,6 @@ var GAME = (function(UI) {
   }
 
   function over() {
-    new Audio("over.mp3").play();
     addManyCircles(_id);
     reset();
     UI.over();
@@ -158,12 +167,10 @@ var GAME = (function(UI) {
   }
 
   function hitCircle(circle) {
-    new Audio("hit.mp3").play();
-    $(circle).stop().remove();
-
     incrementScore();
     updateHighscore();
     
+    UI.hit(circle);
     UI.updateScore(_score);
     UI.updateHighscore(_highscore);
   }
