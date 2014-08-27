@@ -1,10 +1,12 @@
-"use strict";
-
 $(function() {
+  'use strict';
+
   GAME.init();
 });
 
 var UI = (function() {
+  'use strict';
+
   var overSound = new Audio('over.mp3');
   var hitSound = new Audio('hit.mp3');
   
@@ -58,6 +60,8 @@ var UI = (function() {
 })();
 
 var GAME = (function(UI) {
+  'use strict';
+
   var //var
     _id        = 0,
     _score     = 0,
