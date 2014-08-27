@@ -56,7 +56,7 @@ var UI = (function() {
     over:            over,
     updateScore:     updateScore,
     updateHighscore: updateHighscore,
-  }
+  };
 })();
 
 var GAME = (function(UI) {
@@ -215,5 +215,5 @@ var GAME = (function(UI) {
     init:  init,
     over:  over,
     start: start,
-  } 
+  };
 })(UI);
