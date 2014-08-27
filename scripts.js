@@ -36,7 +36,7 @@ var UI = (function() {
   }
   
   function updateHighscore(highscore) {
-    $('#highscore').text("HIGH = " + highscore);
+    $('#highscore').text('HIGH = ' + highscore);
   }
 
   return {
